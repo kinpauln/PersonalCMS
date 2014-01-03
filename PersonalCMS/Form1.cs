@@ -38,7 +38,7 @@ namespace PersonalCMS
                 WebRequest request = WebRequest.Create(queryUrl);
                 WebResponse response = request.GetResponse();
                 Stream resStream = response.GetResponseStream();
-                StreamReader sr = new StreamReader(resStream, Encoding.Default);
+                StreamReader sr = new StreamReader(resStream, Encoding.GetEncoding("utf-8"));
                 string htmlCode = sr.ReadToEnd();
                 resStream.Close();
                 sr.Close();
