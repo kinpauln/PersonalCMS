@@ -1,4 +1,0 @@
-PersonalCMS
-===========
-
-PersonalCMS
